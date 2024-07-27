@@ -4,13 +4,6 @@ def encode(password):
         new_char = str((int(char) + 3) % 10)
         encoded_password += new_char
     return encoded_password
-
-def decode(password):
-    decoded_password = ""
-    for char in password:
-        new_char = str((int(char) - 3) % 10)
-        decoded_password += new_char
-    return decoded_password
 while __name__ == '__main__':
     print('Menu')
     print('-------------')
